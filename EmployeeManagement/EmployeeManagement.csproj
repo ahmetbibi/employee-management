@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	<TargetFramework>netcoreapp2.1</TargetFramework>
+	<UserSecretsId>51315253-be8e-4990-97bf-19c744c9999e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Compile Remove="Migrations\20200817133147_AddPhotoPathColumn.cs" />
+	<Compile Remove="Migrations\20200817133147_AddPhotoPathColumn.Designer.cs" />
+	<Compile Remove="Migrations\20200817134116_AddSomeProperty.cs" />
+	<Compile Remove="Migrations\20200817134116_AddSomeProperty.Designer.cs" />
+	<Compile Remove="Migrations\20200817135610_AddSomeProperty.cs" />
+	<Compile Remove="Migrations\20200817135610_AddSomeProperty.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Microsoft.AspNetCore.App" />
+	<PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+	<PackageReference Include="NLog.Web.AspNetCore" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
